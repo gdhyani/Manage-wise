@@ -1,8 +1,11 @@
 import Navbar from "@/components/navbar";
 import Image from "next/image";
+import Link from "next/link";
 import "../app/globals.css";
 import { HiFire, HiBell, HiDeviceMobile } from "react-icons/hi";
 import Faq from "@/components/faq";
+import Price from "@/components/price";
+import { FaLinkedinIn } from "react-icons/fa";
 
 export default function Home() {
     return (
@@ -245,7 +248,9 @@ export default function Home() {
                     <Faq />
                 </div>
             </section> */}
+
             {/* section5 */}
+
             <section className="pt-40 px-40">
                 <div className="text-center flex flex-col">
                     <h1 className="bg-white items-center w-fit place-self-center gap-1 rounded-lg text-[#8247ff] px-2  border font-[600] text-sm">
@@ -256,12 +261,137 @@ export default function Home() {
                         <span className="text-[#fe8162]"> Pricing </span>plan
                     </h1>
                     <h1 className="max-w-md text-xl place-self-center opacity-70 mt-6">
-                        At Manage Wise, we believe in providing you with pricing plans that adapt to your unique needs.
+                        At Manage Wise, we believe in providing you with pricing
+                        plans that adapt to your unique needs.
                     </h1>
+                </div>
+                <Price />
+            </section>
+
+            {/* section6 */}
+
+            <section className="pt-40 px-40">
+                <div className="">
+                    <h1 className="bg-white items-center inline-flex gap-1 rounded-lg text-[#8247ff] px-2  border font-[600] text-sm">
+                        <span className="inline text-black text-lg">🧡</span>
+                        TESTIMONIALS
+                    </h1>
+                    <h1 className="text-5xl font-semibold mt-6">
+                        Hear from our
+                        <span className="text-[#fe8162]"> Satisfied </span> to
+                        clients
+                    </h1>
+                    <h1 className="lg:w-5/12 text-xl opacity-40 mt-6">
+                        Discover why our clients love working with us. Read
+                        their testimonials and learn how we has helped
+                        businesses.
+                    </h1>
+                </div>
+                <div className="border-8 h-96"></div>
+            </section>
+
+            {/* section 7 */}
+
+            <section className="pt-40 px-40 bg-gradient-to-t from-[#fdf2ec] to-white">
+                <div className="border bg-white rounded-3xl gap-10 flex items-end flex-row px-32 py-24">
+                    <div className="pr-10">
+                        <h1 className="bg-white items-center inline-flex gap-1 rounded-lg text-[#8247ff] px-2  border font-[600] text-sm">
+                            <span className="inline text-black text-lg">
+                                👋
+                            </span>
+                            DON'T MISS OUT
+                        </h1>
+                        <h1 className="text-5xl font-semibold mt-6">
+                            Unleash your{" "}
+                            <span className="text-[#fe8162]"> Potential </span>
+                            with us
+                        </h1>
+                        <h1 className="text-xl opacity-70 mt-6 mr-5">
+                            Join our community of ambitious individuals and
+                            organizations eager to make a difference.
+                        </h1>
+                        <button className="bg-[#8247ff] mt-6 text-white text-lg font-semibold py-4 px-12 rounded-2xl">
+                            Try out now
+                        </button>
+                    </div>
+                    <div className="text-center ">
+                        <h1 className="border rounded-2xl inline-block place-self-center shadow-2xl mb-10 px-5 py-3 text-2xl font-semibold">
+                            <span className="text-[#8247ff]">200+</span> Happy
+                            users
+                        </h1>
+                        <div className="relative">
+                            <Image
+                                className=""
+                                src="/section7.jpg"
+                                width={1000}
+                                height={1000}
+                                alt=""
+                            />
+                            <Image
+                                className="absolute left-0 top-0"
+                                src="/fadefront.jpg"
+                                width={1000}
+                                height={1000}
+                                alt=""
+                            />
+                        </div>
+                    </div>
                 </div>
             </section>
 
-            <section className="h-screen"></section>
+            {/* section8 */}
+            <section className="bg-[#fdf2ec] text-black pt-32 px-40 pb-12">
+                <div className="flex flex-row pb-32 justify-between items-start align-top">
+                    <Image
+                        className="h-12 w-52"
+                        src="/navlogo.jpg"
+                        width={1000}
+                        height={1000}
+                        alt=""
+                    />
+                    <div className="flex flex-col gap-3">
+                        <Link href="/" className="hover:text-[#8247ff]">
+                            Features
+                        </Link>
+                        <Link href="/" className="hover:text-[#8247ff]">
+                            FAQ
+                        </Link>
+                        <Link href="/" className="hover:text-[#8247ff]">
+                            Pricing
+                        </Link>
+                        <Link href="/" className="hover:text-[#8247ff]">
+                            Testimonials
+                        </Link>
+                    </div>
+                </div>
+                <hr />
+                <div className="flex flex-row justify-between pt-10">
+                    <h1 className="">© 2022 ManageWise, Inc.</h1>
+                    <div className="flex gap-4">
+                        <Link href="">
+                            <Image
+                                className="w-[25px]"
+                                src="/insta.svg"
+                                width={1000}
+                                height={1000}
+                                alt=""
+                            />
+                        </Link>
+                        <Link href="">
+                            <Image
+                                className="w-[25px]"
+                                src="/twitter.svg"
+                                width={1000}
+                                height={1000}
+                                alt=""
+                            />
+                        </Link>
+                        <Link href="">
+                            <FaLinkedinIn size={25} />
+                        </Link>
+                    </div>
+                </div>
+            </section>
         </main>
     );
 }
