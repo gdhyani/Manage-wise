@@ -1,4 +1,5 @@
 import Navbar from "@/components/navbar";
+import Testimonials from "@/components/testimonials";
 import Image from "next/image";
 import Link from "next/link";
 import "../app/globals.css";
@@ -235,11 +236,15 @@ export default function Home() {
             </section>
 
             {/* section4 */}
-            {/* <section className="flex flex-col lg:flex-row px-40 gap-10">
+            <section className="pt-40 flex flex-col lg:flex-row px-40 gap-10">
                 <div className="w-1/3">
-                    <h1 className="text-5xl">Need</h1>
+                    <h1 className="bg-white items-center inline-flex gap-1 rounded-lg text-[#8247ff] px-2  border font-[600] text-sm">
+                        <span className="inline text-black text-lg">🙋‍♀️</span>
+                        FAQ
+                    </h1>
+                    <h1 className="text-5xl mt-5">Need</h1>
                     <h1 className="text-[#fe8162] text-5xl">Answers?</h1>
-                    <h1>
+                    <h1 className="mt-3 text-xl w-10/12 opacity-70">
                         Check out our most commonly asked questions below to
                         find the information you need.
                     </h1>
@@ -247,7 +252,7 @@ export default function Home() {
                 <div className="w-2/3">
                     <Faq />
                 </div>
-            </section> */}
+            </section>
 
             {/* section5 */}
 
@@ -270,8 +275,8 @@ export default function Home() {
 
             {/* section6 */}
 
-            <section className="pt-40 px-40">
-                <div className="">
+            <section className="pb-10">
+                <div className="pt-40 px-40">
                     <h1 className="bg-white items-center inline-flex gap-1 rounded-lg text-[#8247ff] px-2  border font-[600] text-sm">
                         <span className="inline text-black text-lg">🧡</span>
                         TESTIMONIALS
@@ -281,18 +286,20 @@ export default function Home() {
                         <span className="text-[#fe8162]"> Satisfied </span> to
                         clients
                     </h1>
-                    <h1 className="lg:w-5/12 text-xl opacity-40 mt-6">
+                    <h1 className="lg:w-6/12 text-xl opacity-70 mt-6">
                         Discover why our clients love working with us. Read
                         their testimonials and learn how we has helped
                         businesses.
                     </h1>
                 </div>
-                <div className="border-8 h-96"></div>
+                <div className="mt-20 h-96">
+                    <Testimonials />
+                </div>
             </section>
 
             {/* section 7 */}
 
-            <section className="pt-40 px-40 bg-gradient-to-t from-[#fdf2ec] to-white">
+            <section className="pt-32 px-40 bg-gradient-to-t from-[#fdf2ec] to-white">
                 <div className="border bg-white rounded-3xl gap-10 flex items-end flex-row px-32 py-24">
                     <div className="pr-10">
                         <h1 className="bg-white items-center inline-flex gap-1 rounded-lg text-[#8247ff] px-2  border font-[600] text-sm">
@@ -340,7 +347,7 @@ export default function Home() {
             </section>
 
             {/* section8 */}
-            <section className="bg-[#fdf2ec] text-black pt-32 px-40 pb-12">
+            <section className="bg-[#fdf2ec] text-black pt-28 px-40 pb-12">
                 <div className="flex flex-row pb-32 justify-between items-start align-top">
                     <Image
                         className="h-12 w-52"
