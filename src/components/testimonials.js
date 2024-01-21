@@ -39,7 +39,7 @@ export default function Testimonials() {
         <div className="relative ">
             <Ticker direction={1} className="" duration={70}>
                 {data.map((item, index) => (
-                    <div className="self-start border rounded-2xl mr-8 w-80 px-8 py-10">
+                    <div key={index} className="self-start border rounded-2xl mr-8 w-80 px-8 py-10">
                         <h1 className=" text-[20px] ">{item.message}</h1>
                         <div className="flex gap-2 flex-row mt-6">
                             <Image

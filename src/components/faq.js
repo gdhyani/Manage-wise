@@ -49,7 +49,7 @@ export default function Faq() {
         // </Accordion>
         <div className="flex flex-col w-full gap-3  ">
             {content.map((e) => (
-                <div className="flex flex-col items-center justify-between px-5 py-4  bg-[#f7f8fd]  rounded-2xl">
+                <div key={e} className="flex flex-col items-center justify-between px-5 py-4  bg-[#f7f8fd]  rounded-2xl">
                     <div onClick={(evt)=>(setOpenFaq(!faq))} className="flex flex-row w-full justify-between">
                         <h1  className="font-bold  text-2xl">
                             {e.title}
